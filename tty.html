@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy - เรียน HTML ฟรี</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html{
+            scroll-behavior:smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold">HTML Academy</h1>
+
+        <div class="space-x-5 hidden md:block">
+            <a href="#home" class="hover:text-yellow-300">หน้าแรก</a>
+            <a href="#lesson" class="hover:text-yellow-300">บทเรียน</a>
+            <a href="#example" class="hover:text-yellow-300">ตัวอย่าง</a>
+            <a href="#exercise" class="hover:text-yellow-300">แบบฝึกหัด</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-5xl font-bold mb-5">
+            เรียนเขียน HTML ตั้งแต่พื้นฐาน
+        </h2>
+
+        <p class="text-xl mb-8">
+            เว็บไซต์สำหรับผู้เริ่มต้น พร้อมตัวอย่างและแบบฝึกหัด
+        </p>
+
+        <a href="#lesson"
+           class="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-200">
+            เริ่มเรียนเลย
+        </a>
+    </div>
+</section>
+
+<!-- Lesson -->
+<section id="lesson" class="max-w-6xl mx-auto py-16 px-6">
+
+    <h2 class="text-4xl font-bold mb-10 text-center">
+        บทเรียนพื้นฐาน
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">
+                HTML คืออะไร?
+            </h3>
+
+            <p class="text-gray-600">
+                HTML ย่อมาจาก HyperText Markup Language
+                ใช้สร้างโครงสร้างของเว็บไซต์
+            </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">
+                Tag
+            </h3>
+
+            <p class="text-gray-600">
+                HTML ใช้ Tag เช่น
+                &lt;h1&gt;,
+                &lt;p&gt;,
+                &lt;img&gt;
+                เพื่อสร้างเนื้อหา
+            </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">
+                Attributes
+            </h3>
+
+            <p class="text-gray-600">
+                Attribute คือข้อมูลเพิ่มเติมของ Tag
+                เช่น src, href และ alt
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Example -->
+<section id="example" class="bg-white py-16">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-4xl font-bold mb-10 text-center">
+ตัวอย่างโค้ด
+</h2>
+
+<div class="bg-gray-900 text-green-400 rounded-xl p-6 overflow-x-auto">
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;สวัสดี HTML&lt;/h1&gt;
+
+    &lt;p&gt;ยินดีต้อนรับ&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Exercise -->
+<section id="exercise" class="py-16">
+
+<div class="max-w-5xl mx-auto px-6">
+
+<h2 class="text-4xl font-bold text-center mb-10">
+แบบฝึกหัด
+</h2>
+
+<div class="bg-white shadow-lg rounded-xl p-8">
+
+<h3 class="text-2xl font-bold mb-5">
+ลองสร้างหน้าเว็บที่มี
+</h3>
+
+<ul class="list-disc ml-6 space-y-2 text-gray-700">
+<li>หัวข้อ h1</li>
+<li>ข้อความ p</li>
+<li>รูปภาพ img</li>
+<li>ลิงก์ a</li>
+</ul>
+
+<button
+onclick="showAnswer()"
+class="mt-8 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">
+เฉลย
+</button>
+
+<div id="answer" class="hidden mt-8">
+
+<pre class="bg-gray-900 text-green-400 p-5 rounded-xl overflow-x-auto"><code>&lt;h1&gt;My Website&lt;/h1&gt;
+
+&lt;p&gt;Hello HTML&lt;/p&gt;
+
+&lt;img src="cat.jpg"&gt;
+
+&lt;a href="https://google.com"&gt;
+Google
+&lt;/a&gt;
+</code></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="bg-gray-900 text-white text-center p-6">
+
+<p>© 2026 HTML Academy | เรียน HTML ฟรี</p>
+
+</footer>
+
+<script>
+
+function showAnswer(){
+
+document.getElementById("answer").classList.toggle("hidden");
+
+}
+
+</script>
+
+</body>
+</html>
